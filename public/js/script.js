@@ -5,7 +5,7 @@ const movieDiv = document.querySelector(".movie");
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     const title = document.querySelector("input").value.replace(/ /g, "+");
-    fetch(`http://localhost:3000/movie?title=${title}`).then(res => res.json().then((data) => {
+    fetch(`/movie?title=${title}`).then(res => res.json().then((data) => {
             if (data.error) {
                 movieDiv.innerHTML = data.error;
             } else if (data.results.length === 0) {
