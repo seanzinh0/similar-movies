@@ -26,13 +26,12 @@ app.get("/movie", (req, res) => {
         })
     }
 
-    tmdb(req.query.title, (error, movieData = {}) => {
+    tmdb(req.query.title, (error, {results} = {}) => {
         if (error) {
             return res.send({error})
         }
         res.send({
-            title: req.query.title,
-            data: movieData
+            results: results,
         })
     });
 })
