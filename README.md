@@ -7,7 +7,6 @@ Film Finder is a web application that allows users to search for movies and disc
 - Search for movies by title.
 - Display details of the searched movie, including its title, release date, rating, and overview.
 - Show a list of similar movies based on the selected film.
-- Responsive design for a better user experience.
 
 ## Technologies Used
 
